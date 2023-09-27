@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+.wrap{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu__tel{
+    color: inherit;
+    font-size: 16px;
+}
+
+.menu__btn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.promo{
+    height: 90vh;
+    background-size: cover;
+}
