@@ -25,23 +25,104 @@ nav{
 
 .menu-item{
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
 }
 
 .menu__tel{
-    color: inherit;
+    color: white;
     font-size: 16px;
 }
+.header{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.header__logo{
+    transition: 0.5s;
+}
 
+.header__logo:hover{
+    transform: scale(1.2);
+}
 .menu__btn{
     background-color: white;
     padding: 10px;
     border-radius: 20px;
     font-size: 16px;
+    border: 2px white solid;
+    transition: 0.5s;
+}
+
+.menu__btn:hover{
+    transform: scale(1.1);
+    background-color: #FF5F04;
+    color: white;
+    border: #FF5F04;
+    box-shadow: 0 0 5px 2px silver;
 }
 
 .promo{
-    height: 90vh;
+    padding-top: 300px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/media/promo/time-to-travel.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.promo__title{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.promo__subtitle{
+    font-size: 30px;
+    font-weight: 500;
+    width: 900px;
+    height: 66px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+.promo__text{
+    font-size: 22px;
+    font-weight: 500;
+    width: 900px;
+    margin-bottom: 100px;
+}
+
+.promo__btn{
+    display: flex;
+    gap: 20px;
+}
+.promo__btn button{
+    width: 290px;
+    height: 68px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.btn-active{
+    background-color: #FF5F04;
+    color: white;
+    border: transparent;
+}
+
+.btn-noactive{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.promo__btn button:hover{
+    background-color: #FF5F04;
+    color: white;
+    border: transparent;
+    box-shadow: 0 0 5px 2px silver;
+}
+.promo{
+    margin-bottom: 100px;
 }
