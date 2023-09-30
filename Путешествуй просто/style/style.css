@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,45 +7,50 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.wrap{
+.wrap {
     max-width: 1400px;
     margin: 0 auto;
 }
 
-nav{
+/* HEADER */
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     gap: 40px;
     align-items: center;
 }
 
-.menu__tel{
+.menu__tel {
     color: white;
     font-size: 16px;
 }
-.header{
+
+.header {
     position: absolute;
     left: 0;
     right: 0;
 }
-.header__logo{
+
+.header__logo {
     transition: 0.5s;
 }
 
-.header__logo:hover{
+.header__logo:hover {
     transform: scale(1.2);
 }
-.menu__btn{
+
+.menu__btn {
     background-color: white;
     padding: 10px;
     border-radius: 20px;
@@ -54,7 +59,7 @@ nav{
     transition: 0.5s;
 }
 
-.menu__btn:hover{
+.menu__btn:hover {
     transform: scale(1.1);
     background-color: #FF5F04;
     color: white;
@@ -62,23 +67,27 @@ nav{
     box-shadow: 0 0 5px 2px silver;
 }
 
-.promo{
+/* HEADER END */
+
+/* PROMO BLOCK */
+
+.promo {
     padding-top: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/media/promo/time-to-travel.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/media/promo/time-to-travel.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: white;
 }
 
-.promo__title{
+.promo__title {
     font-size: 64px;
     font-weight: 700;
     color: white;
     margin-bottom: 30px;
 }
 
-.promo__subtitle{
+.promo__subtitle {
     font-size: 30px;
     font-weight: 500;
     width: 900px;
@@ -86,18 +95,20 @@ nav{
     letter-spacing: 2px;
     margin-bottom: 100px;
 }
-.promo__text{
+
+.promo__text {
     font-size: 22px;
     font-weight: 500;
     width: 900px;
     margin-bottom: 100px;
 }
 
-.promo__btn{
+.promo__btn {
     display: flex;
     gap: 20px;
 }
-.promo__btn button{
+
+.promo__btn button {
     width: 290px;
     height: 68px;
     font-size: 24px;
@@ -105,24 +116,415 @@ nav{
     border-radius: 50px;
     transition: 0.5s;
 }
-.btn-active{
+
+.btn-active {
     background-color: #FF5F04;
     color: white;
     border: transparent;
 }
 
-.btn-noactive{
+.btn-noactive {
     background-color: transparent;
     color: white;
     border: 2px solid white;
 }
 
-.promo__btn button:hover{
+.promo__btn button:hover {
     background-color: #FF5F04;
     color: white;
     border: transparent;
     box-shadow: 0 0 5px 2px silver;
 }
-.promo{
+
+.promo {
     margin-bottom: 100px;
 }
+
+/* PROMO END */
+
+/* TOUR BLOCK */
+
+.tour {
+    margin-bottom: 150px;
+}
+
+.tour__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-nav {
+    margin-bottom: 60px;
+}
+
+.tour-link {
+    color: black;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.tour-link:hover {
+    transform: scale(1.2);
+}
+
+.link-active {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+}
+
+.tour-items {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.tour-item img {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 387px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.tour-item {
+    border: 2px solid silver;
+    width: 430px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #103F88;
+    display: flex;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.tour-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 2px silver;
+}
+
+.tour-item h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.tour-item h3 {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tour__button p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tour__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour__button button {
+    width: 200px;
+    height: 52px;
+    background-color: #FF5F04;
+    border: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.tour__button button:hover {
+    background-color: #FF5F04;
+    color: white;
+    border: transparent;
+    box-shadow: 0 0 5px 2px black;
+}
+
+.tour-btn {
+    margin: 0 auto;
+    padding: 19px 150px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #103F88;
+    transition: 0.3s;
+    border: 2px solid #103F88;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.tour-btn:hover {
+    background-color: #FF5F04;
+    color: white;
+    border: transparent;
+    box-shadow: 0 0 5px 2px silver;
+}
+
+/* TOUR END */
+
+/* TEAM BLOCK */
+.team {}
+
+
+.team__title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #103F88;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.team__subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #103F88;
+    width: 80%;
+    margin-left: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.team-items {
+    justify-content: space-between;
+    display: flex;
+}
+
+.team-item {
+    text-align: center;
+    width: 280px;
+    height: 582px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.team-item p {
+    margin-top: 20px;
+    color: #103F88;
+    font-size: 16px;
+}
+
+.job {
+    color: #FF5F04;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* TEAM BLOCK END */
+
+/* FAQ BLOKC */
+.faq-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-active {
+    border: 2px solid #FF5F04;
+    border-radius: 20px;
+    padding: 25px;
+    width: 600px;
+    height: 192px;
+    color: #FF5F04;
+}
+
+.faq-active p {
+    padding-bottom: 20px;
+    color: #FF5F04;
+}
+
+.faq-item {
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #103F88;
+}
+
+.faq p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.faq-title {
+    color: #103F88;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-item p {
+    color: #103F88;
+}
+
+.faq-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq {
+    margin-bottom: 160px;
+}
+
+/* FAQ BLOCK END */
+
+/* reviews block */
+
+.reviews-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews{
+    color: #103F88;
+    margin-bottom: 100px;
+}
+.reviews-item{
+    display: flex;
+    align-items: center;
+}
+.reviews-wrap{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 815px;
+    height: 216px;
+}
+.reviews__imgbox img{
+    border-radius: 50%;
+}
+.reviews__text p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.reviews__text p{
+    color: #103F88;
+}
+.reviews__text h4{
+    margin-bottom: 5px;
+}
+.reviews-subtitle{
+    margin-bottom: 60px;
+    text-align: center;
+    width: 80%;
+    margin-left: 150px;
+}
+.reviews-title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.reviews button{
+    border: transparent;
+    background-color: #fff;
+}
+/* reviews block end  */
+
+/* form */
+.form-items{
+    background-repeat: no-repeat;
+    width: 1240px;
+    height: 600px;
+    border-radius: 50px;
+    background-image: url('/media/form/Контакт.png');
+    display: flex;
+    margin-left: 150px;
+}
+.form-item{
+    padding: 70px;
+}
+.form-item h2,p{
+    color: white;
+}
+.form-item h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.form-item p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding-top: 20px;
+}
+.form-btn{
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-btn button{
+    width: 400px;
+    height: 68px;
+    background-color: #FF5F04;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.form-item input{
+    width: 528px;
+    height: 68px;
+    border-radius: 20px;
+    border: transparent;
+}
+.form-item input::placeholder{
+    padding: 30px;
+    color: black;
+}
+
+.form{
+    margin-bottom: 150px;
+}
+/* form end */
+
+/* footer  */
+footer{
+    background-color: silver;
+}
+footer img{
+    margin-top: 10px;
+}
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__links{
+    display: flex;
+    gap: 20px;
+}
+.footer__item a {
+    font-size: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+.nav__links a:hover{
+    transform: scale(1.1);
+}
+/* footer end */
