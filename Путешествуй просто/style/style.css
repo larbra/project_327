@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -73,7 +74,7 @@ nav {
 
 .promo {
     padding-top: 300px;
-    background: linear-gradient(0deg, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/media/promo/time-to-travel.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/media/promo/time-to-travel.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -154,6 +155,8 @@ nav {
 }
 
 .tour-nav {
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
@@ -268,7 +271,6 @@ nav {
 /* TOUR END */
 
 /* TEAM BLOCK */
-.team {}
 
 
 .team__title {
@@ -338,6 +340,7 @@ nav {
     width: 600px;
     height: 192px;
     color: #FF5F04;
+    cursor: pointer;
 }
 
 .faq-active p {
@@ -346,6 +349,7 @@ nav {
 }
 
 .faq-item {
+    cursor: pointer;
     padding: 20px;
     border-radius: 20px;
     width: 600px;
@@ -392,91 +396,109 @@ nav {
 
 /* reviews block */
 
-.reviews-items{
+.reviews-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.reviews{
+
+.reviews {
     color: #103F88;
     margin-bottom: 100px;
 }
-.reviews-item{
+
+.reviews-item {
     display: flex;
     align-items: center;
 }
-.reviews-wrap{
+
+.reviews-wrap {
     display: flex;
     gap: 40px;
     align-items: center;
     width: 815px;
     height: 216px;
 }
-.reviews__imgbox img{
+
+.reviews__imgbox img {
     border-radius: 50%;
 }
-.reviews__text p{
+
+.reviews__text p {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
 }
-.reviews__text p{
+
+.reviews__text p {
     color: #103F88;
 }
-.reviews__text h4{
+
+.reviews__text h4 {
     margin-bottom: 5px;
 }
-.reviews-subtitle{
+
+.reviews-subtitle {
     margin-bottom: 60px;
     text-align: center;
     width: 80%;
     margin-left: 150px;
 }
-.reviews-title{
+
+.reviews-title {
     margin-bottom: 20px;
     text-align: center;
 }
-.reviews button{
+
+.reviews button {
     border: transparent;
     background-color: #fff;
 }
+
 /* reviews block end  */
 
 /* form */
-.form-items{
+.form-items {
     background-repeat: no-repeat;
     width: 1240px;
     height: 600px;
     border-radius: 50px;
     background-image: url('/media/form/Контакт.png');
     display: flex;
-    margin-left: 150px;
+    margin: 0 auto;
 }
-.form-item{
+
+.form-item {
     padding: 70px;
 }
-.form-item h2,p{
+
+.form-item h2,
+p {
     color: white;
 }
-.form-item h2{
+
+.form-item h2 {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 30px;
 }
-.form-item p{
+
+.form-item p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 8px;
     padding-top: 20px;
 }
-.form-btn{
+
+.form-btn {
     display: flex;
     margin-top: 40px;
     gap: 40px;
     align-items: center;
     justify-content: space-between;
 }
-.form-btn button{
+
+.form-btn button {
     width: 400px;
     height: 68px;
     background-color: #FF5F04;
@@ -486,45 +508,70 @@ nav {
     font-weight: 600;
     border-radius: 20px;
 }
-.form-item input{
+
+.form-item input {
     width: 528px;
     height: 68px;
     border-radius: 20px;
     border: transparent;
 }
-.form-item input::placeholder{
+
+.form-item input::placeholder {
     padding: 30px;
     color: black;
 }
 
-.form{
+.form {
     margin-bottom: 150px;
 }
+
 /* form end */
 
 /* footer  */
-footer{
-    background-color: silver;
+footer {
+    background-color: #F0F0F4;
+    height: 35vh;
+    margin-top: 92px;
+    padding: 40px;
 }
-footer img{
-    margin-top: 10px;
-}
+
 .footer__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav__links{
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__img {
     display: flex;
     gap: 20px;
 }
-.footer__item a {
-    font-size: 20px;
-    color: black;
-    transition: 0.5s;
+
+.footer__textbox h3{
+    cursor: pointer;
 }
 
-.nav__links a:hover{
-    transform: scale(1.1);
+.footer p {
+    color: #FF5F04;
+    font-size: 20px;
+    font-weight: 700;
 }
+
+.footer a {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2F3035;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
 /* footer end */
