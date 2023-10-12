@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'zxc';
+    src: url(../fonts/zxc.ttf);  
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .5s;
+}
+
+/* img {
+    height: 250px;
+} */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 23px;
+    font-family: 'zxc';
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    width: 380px;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.about__text{
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    opacity: 0;
+}
+
+.item:hover .img{
+    transform: translate3d(-10px,-10px,0);
+}
+
+.item:hover .img img{
+    opacity: .1;
+}
+
+.img{
+    background: linear-gradient(#f38181,#fce38a);
+
+}
+
+.img img{
+    display: block;
+}
+
+.item:hover .about__text{
+    opacity: 1;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    margin: 30px auto;
+}
