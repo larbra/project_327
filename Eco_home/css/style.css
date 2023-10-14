@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .3s;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header__link:hover {
+    transform: scale(1.1);
+}
+
+.header__link {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.header__btn {
+    background-color: #45C55D;
+    color: white;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #32902D;
+}
+
+.header__logo {
+    height: auto;
+    width: 70px;
+
+}
+
+/* header-end */
+
+
+/* promo */
+
+.promo {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('/media/promo/promo-bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo__content {
+    padding-top: 200px;
+    color: white;
+}
+
+.promo__items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.promo__title {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.promo:hover .eco-green {
+    color: #45C55D;
+}
+.promo:hover .eco-yellow{
+    color: #eeff00;
+    transform: scale(1.1);
+}
+
+.promo__subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    width: 500px;
+}
+
+.promo__btn{
+    background-color: #45C55D;
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+/* promo-end */
+
+/* catalog */
+
+.catalog{
+    padding-top: 60px;
+    height: 100vh;
+}
+
+.catalog__title{
+    text-align: center;
+    font-size: 76px;
+    color: #103F88;
+    margin-bottom: 60px;
+}
+.catalog:hover .eco-green {
+    color: #32902D;
+}
+
+.catalog__items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 7px;
+}
+
+.catalog__items img {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 250px;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+.catalog__item{
+    position: relative;
+    border: 2px solid silver;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #103F88;
+    display: flex;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.catalog__text{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.catalog__item:hover {
+    box-shadow: 0 0 5px 2px silver;
+}
+
+.catalog__btn{
+    position: absolute;
+    right: 10px;
+    background-color: #45C55D;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* catalog-end */
+
+/* advantages */
+
+.advantages{
+    padding-top: 700px;
+    margin-bottom: 60px;
+}
+
+.advantages__title{
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 60px;
+}
+
+.advantages__items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.advantages__item{
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.advantages:hover .eco-green{
+    color: #45C55D;
+}
+
+.advantages__item:hover{
+    transform: translate3d(-10px,-10px,0);
+    background: linear-gradient(#45C55D,white);
+}
+
+.item-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #103F88;
+}
+
+.item-text{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* advantages-end */
+
+/* form  */
+
+.form{
+    background-image: url('/media/form/form.jpg');
+    box-sizing: cover;
+    margin-bottom: 100px;
+    height: 673px;
+    position: relative;
+}
+
+.form__content{
+    position: relative;
+}
+
+.form__items{
+    position: absolute;
+    right: 0;
+    top: 160px;
+}
+
+.form__title{
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.form__elm{
+    display: flex;
+}
+
+.form__item{
+    background-color: #FFFFFF26;
+    color: white;
+    display: flex;
+    width: 147px;
+    gap: 10px;
+    padding-left: 10px;
+    height: 52px;
+    align-items: center;
+}
+.form__item:hover{
+    background-color: black;
+    color: white;
+}
+
+.form__item-active{
+    background-color: #fff;
+    color: black;
+
+}
+
+form{
+    width: 442px;
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    outline: none;
+    flex-direction: column;
+}
+
+input{
+    padding: 20px;
+}
+
+form p{
+    color: white;
+}
+/* form-end */
+
+
+/* reviews */
+
+.reviews__title{
+    text-align: center;
+    font-size: 70px;
+}
+
+.reviews{
+    margin-bottom: 60px;
+}
+
+.reviews:hover .eco-green{
+    color: #45C55D;
+}
+.carousel ul {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    gap: 90px;
+    align-items: center;
+    transition: margin-left 250ms;
+}
+
+.carousel li {
+    display: inline-block;
+}
+
+.carousel {
+    margin-left: 150px;
+    position: relative;
+    width: 900px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img{
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.prev {
+    left: -15px;
+}
+
+.next {
+    right: -30px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 75px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 24px;
+    display: block;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    background-color: white;
+    transform: scale(1.1);
+}
+li{
+    font-size: 20px;
+}
+.arrow {
+    transition: 0.3s;
+}
+.home__content{
+    padding-top: 30px;
+    overflow: hidden;
+    width: 800px;
+    transition: transform 0.5s ease-in-out;}
+.carousel img {
+    width: 130px;
+    height: 130px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.carousel img:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px 2px black;
+}
+/* reviews-end */
