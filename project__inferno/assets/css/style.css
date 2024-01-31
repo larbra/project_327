@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Jura';
+    src: url(../fonts/Jura.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Jura';
+    transition: .5s;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* header */
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+   
+}
+
+.menu-link {
+    color: black;
+    font-size: 20px;
+    position: relative;
+    font-weight: 700;
+}
+
+
+.menu-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header_icons:hover{
+    transform: scale(1.2);
+}
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+
+}
+
+.search-placeholder {
+    padding-right: 65px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.menu-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background: rgb(0, 0, 0);
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+/* header */
+
+/* promo */
+
+.promo{
+    height: 90vh;
+    background-image: url('../media/banner/баннер.png');
+    background-repeat: no-repeat;
+}
+.promo__content{
+    padding-top: 160px;
+    padding-left: 40px;
+}
+.promo__title{
+    color: white;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.promo__subtitle{
+    font-size: 25px;
+    font-weight: 500;
+    width: 380px;
+    color: white;
+    margin-bottom: 30px;
+}
+.promo-btn{
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    padding: 5px 40px ;
+    border: 1px solid white;
+}
+.promo-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+/* promo */
+
+
+/* product */
+
+.product__title{
+    font-size: 50px;
+    padding-left: 40px;
+    color: #95411B;
+    margin-bottom: 35px;
+}
+.product__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.izbr{
+    position: absolute;
+    width: 30px;
+}
+.tovar{
+    padding-left:20px;
+    margin-bottom: 20px;
+}
+.product__item{
+    border: 2px solid #95411B;
+    border-radius: 25px;
+    padding: 40px;
+    padding-right: 50px;
+    position: relative;
+}
+.product__name{
+    color: #95411B;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.product__size{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.product__linksize {
+    font-size: 20px;
+    color: #95411B;
+    border: 1px solid #95411B;
+  
+    padding: 5px 10px;
+}
+.product__linksize:hover{
+    color: white;
+    background-color: #95411B;
+}
+
+.product__linksize-active{
+    color: white;
+    background-color: #95411B;
+}
+.product__pricebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-price{
+    color: #95411B;
+    font-size: 20px;
+}
+.product-btn{
+    padding: 5px 20px;
+    background-color: #fff;
+    font-size: 20px;
+    color: #95411B;
+    border: 1px solid #95411B;
+}
+.product-btn:hover{
+    background-color: #95411B;
+    color: white;
+}
+/* product */
